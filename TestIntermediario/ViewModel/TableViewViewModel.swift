@@ -39,7 +39,7 @@ class TableViewViewModel {
                         let selectedCoin = result.rates.filter {$0.asset_id_quote == coin}
                         self.ratesArray.append(selectedCoin[0])
                     }
-//                    self.iconsArray = result.filter {
+                    
                     print(self.ratesArray)
                     completion(true, nil)
                 } catch  {

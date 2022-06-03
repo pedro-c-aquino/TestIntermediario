@@ -28,6 +28,10 @@ class LoginScreenViewModel {
             let userEmail = user.value(forKey: "email") as? String
             let userPassword = user.value(forKey: "password") as? String
             
+            if email == "" || password == "" {
+                return false
+            }
+            
             if userEmail != nil && userPassword != nil {
                 if userEmail! == email {
                     if userPassword! == password {
